@@ -1,0 +1,27 @@
+.progress {
+	width: 80%;
+	height: 20px;
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	margin: 20px auto;
+}
+.progress-bar {
+	width: calc(50% - 2px);
+	height: 100%;
+	background-color: #00bfff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}      
+
+@keyframes animate {
+	from {
+		width: 0%;
+	}
+	to {
+		width: calc(100% - 2px);
+	}
+}
+.progress-bar {
+	animation: animate 5s linear;
+}       
